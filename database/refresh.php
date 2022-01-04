@@ -10,7 +10,7 @@ $pdo = new PDO("sqlite:$path");
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $query = $pdo->prepare('
-        CREATE TABLE posts(
+        CREATE TABLE posts (
             id INTEGER PRIMARY KEY,
             title VARVHAR(255) NOT NULL,
             body TEXT NOT NULL
