@@ -13,7 +13,7 @@
 ?>
 
 
-<?php include('../header.php') ?>
+<?php htmlPartial('header') ?>
 
     <h1>Page d'accueil</h1>
 
@@ -27,4 +27,4 @@
 
     <p><a href="newPost.php">Écrire un nouvel article</a></p>
 
-<?php include('../footer.php') ?>
+<?php htmlPartial('footer')?>

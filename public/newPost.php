@@ -15,7 +15,7 @@
     }
 ?>
 
-<?php include('../header.php') ?>
+<?php htmlPartial('header') ?>
 
     <h1>Écrire un nouvel article</h1>
 
@@ -31,4 +31,4 @@
         </p>
     </form>
 
-<?php include('../footer.php') ?>
+<?php htmlPartial('footer') ?>
