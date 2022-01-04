@@ -1,13 +1,12 @@
 <?php
 
-$path = __DIR__ . '/database.sqlite';
+include('../functions.php');
 
-if (file_exists($path)) {
-    unlink($path);
+$pdo = pdo();
+
+if (file_exists(SQLITE_DATABASE_PATH)) {
+    unlink(SQLITE_DATABASE_PATH);
 }
-
-$pdo = new PDO("sqlite:$path");
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $query = $pdo->prepare('
         CREATE TABLE posts (

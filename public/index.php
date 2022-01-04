@@ -1,8 +1,8 @@
 <?php
 
-    $path = __DIR__ . '/../database/database.sqlite';
-    $pdo = new PDO("sqlite:$path");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    include('../functions.php');
+
+    $pdo = pdo();
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
     
