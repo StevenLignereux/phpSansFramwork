@@ -1,12 +1,12 @@
 <?php
 
-include('../functions.php');
-
-$pdo = pdo();
+require_once(__DIR__ . '/../functions.php');
 
 if (file_exists(SQLITE_DATABASE_PATH)) {
     unlink(SQLITE_DATABASE_PATH);
 }
+
+$pdo = pdo();
 
 $query = $pdo->prepare('
         CREATE TABLE posts (
