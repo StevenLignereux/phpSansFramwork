@@ -10,7 +10,7 @@
                 ':body' => $_POST['body']
             ]);
 
-        var_dump($_POST);
+        header('Location: /post.php?id=' . $pdo->lastInsertId());
         die();
     }
 ?>
