@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors', 1);
+
 define('SQLITE_DATABASE_PATH', __DIR__ . '/database/database.sqlite');
 
 
